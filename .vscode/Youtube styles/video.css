@@ -1,0 +1,222 @@
+.thumbnail {
+width:100% 
+
+}
+.Author,
+.stat{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    
+}
+
+.video-preview{
+    
+    
+    
+}
+
+
+.channel-picture{
+    display:inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+.video-title{
+    display: inline-block;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 700;
+
+
+}
+.profile-picture{
+    width: 36px;
+    border-radius: 20px;
+}
+.Video-title{
+    margin-top: 0%;
+    line-height: 20px;
+}
+.Video-title{
+    margin-top: 0%;
+    
+}
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+.Author{
+    margin-top: 12px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media (max-width: 750px) {
+    .video-grid{
+        grid-template-columns:  1fr 1fr;
+    }
+}
+
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-family: roboto,arial;
+    font-size: 12px;
+    font-weight: 500px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+}
+
+.notfication-icon-container{
+    position: relative;
+   
+}
+
+.notfication-count3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-family: roboto,Arial;
+    font-size: 11px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 11px;
+
+}
+
+/* Container for the profile picture and tooltip */
+.channel-picture-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top; /* Ensure the container aligns properly with other elements */
+}
+
+/* Tooltip styling */
+.channel-picture-container .tooltip {
+    position: absolute;
+    top: 50%; /* Center the tooltip vertically relative to the profile picture */
+    left: 110%; /* Position the tooltip to the right of the profile picture */
+    transform: translateY(-50%); /* Adjust to vertically center the tooltip */
+    background-color: white !important; /* Set the background to white */
+    color: grey; /* Set the text color to grey */
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: none; /* Hide the tooltip by default */
+    z-index: 5000; /* Ensure tooltip appears above other elements */
+    white-space: nowrap; /* Prevent text wrapping */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+    max-width: 300px; /* Adjust the width to match the text area */
+    overflow: visible; /* Ensure the content is not clipped */
+}
+
+/* Show tooltip on hover */
+.channel-picture-container:hover .tooltip {
+    display: flex; /* Show the tooltip on hover */
+    pointer-events: auto; /* Allow interaction with the tooltip */
+}
+
+/* Tooltip content */
+.tooltip-content {
+    display: flex;
+    flex-direction: column; /* Stack the profile picture and text vertically */
+    align-items: center; /* Center align the content */
+    gap: 10px; /* Add space between the profile picture and text */
+}
+
+/* Tooltip profile picture */
+.tooltip-profile-picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; 
+    display: block; /* Ensure the image is displayed */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    visibility: visible; /* Ensure the image is visible */
+    opacity: 1; /* Ensure the image is not transparent */
+}
+
+/* Tooltip text */
+.tooltip-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: grey; /* Ensure the text inside the tooltip is grey */
+}
+
+.tooltip-text .author {
+    font-weight: bold; 
+    color: grey; /* Set author text color to grey */
+}
+
+.tooltip-text .stat {
+    font-size: 10px;
+    color: grey; /* Set stat text color to grey */
+    font-weight: bold;
+}
+
+/* Profile picture in the channel-picture-container */
+.profile-picture,
+.tooltip-profile-picture {
+    width: 36px; /* Same width as the channel picture */
+    height: 36px; /* Ensure the height matches the width */
+    border-radius: 50%; /* Make it circular */
+    display: block; /* Ensure the image is displayed */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 2px solid #ccc; /* Optional: Add a border for consistency */
+}
+
+.parent-container {
+    overflow: visible; /* Ensure the tooltip is not clipped */
+}
+
+/* Default layout for larger screens */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+/* For screens smaller than 750px */
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+    }
+}
+
+/* For screens smaller than 500px */
+@media (max-width: 500px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .video-title {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .thumbnail-row {
+        margin-bottom: 12px; /* Add more spacing for smaller screens */
+    }
+
+    .profile-picture {
+        width: 28px; /* Reduce profile picture size */
+        height: 28px;
+    }
+
+    .tooltip {
+        font-size: 10px; /* Adjust tooltip font size */
+        max-width: 200px; /* Reduce tooltip width */
+    }
+}

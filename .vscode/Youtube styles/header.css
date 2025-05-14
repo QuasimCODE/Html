@@ -1,0 +1,379 @@
+.search-bar{
+    height: 34px;
+    flex: 1;
+    width: 0;
+    font-size: 15px;
+    padding-left: 10px;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: #ddd9d9;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0 0 0, 0.05)
+
+    
+}
+.search-bar::placeholder{font-family: Roboto, Arial; 
+    font-size: 15px;
+}
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color: rgb(238, 238, 238);
+    z-index: 100;
+}
+.left-section{
+    
+    display: flex;
+    align-items: center;
+}
+.right-section{
+   
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+}
+.middle-section{
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+
+
+}
+.youtube-logo{
+    height: 20px;
+
+}
+.search-button{
+    width: 60px;
+    height: 34px;
+    background-color: rgb(248, 248, 248);
+    border-color: rgb(198, 198, 198);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: -1px;
+    position:relative
+
+
+
+
+}
+.icon{
+
+    height: 25px;
+    margin-top: 4px;
+
+}
+.voice-search-icon{
+    height: 25px;
+    margin-top: 4px;
+    
+}
+
+
+.voice-button{
+   width: 40px;
+   height: 34px;
+   border-radius: 13px;
+   border-width: none;
+   border-style: solid;
+   border-color: rgb(240, 240, 240);
+   margin-left: 5px;
+   position: relative;
+
+}
+
+.upload-icon{
+    height: 24px;
+}
+.youtube-apps-icon{
+    height: 24px;
+
+}
+.notfication-icon{
+    height: 24px;
+
+}
+
+.profile-picturee{
+    
+    height: 30px;
+    border-radius: 15px;
+}
+.search-button .tooltip{
+    position: absolute;
+    background-color: grey;
+    color:white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.05s;
+    pointer-events: none;
+   
+
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+} 
+.voice-button .tooltip{
+
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px; /* Add padding for spacing */
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px; /* Position below the button */
+    left: 50%; /* Center horizontally relative to the button */
+    transform: translateX(-50%); /* Adjust for centering */
+    white-space: nowrap; /* Prevent text from wrapping */
+    opacity: 0;
+    transition: 0.05s;
+    pointer-events: none;
+}
+.voice-button:hover .tooltip{
+    opacity: 1;
+}
+.upload-icon-container {
+    position: relative;
+}
+
+.upload-icon-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.upload-icon-container:hover .tooltip {
+    opacity: 1;
+}
+.Youtube-app-container {
+    position: relative;
+}
+.Youtube-app-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+.Youtube-app-container:hover .tooltip {
+    opacity: 1;
+}
+.notfication-icon-container {
+    position: relative;
+}
+.notfication-icon-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+.notfication-icon-container:hover .tooltip {
+    opacity: 1;
+}
+.Youtube-app-container{
+    position: relative;
+}
+.Youtube-app-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+.Youtube-app-container:hover .tooltip {
+    opacity: 1;
+}
+/* Tooltip Styles */
+.youtube-app-container,
+.notfication-icon-container,
+.upload-icon-container {
+    position: relative;
+}
+
+.youtube-app-container .tooltip,
+.notfication-icon-container .tooltip,
+.upload-icon-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.youtube-app-container:hover .tooltip,
+.notfication-icon-container:hover .tooltip,
+.upload-icon-container:hover .tooltip {
+    opacity: 1;
+}
+.channel-picuture-container{
+    position: relative;
+    display: inline-block;
+}
+.channel-picuture-container .tooltip {
+  position:absolute;
+  bottom: -60px;
+  left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between the profile picture and text */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+    white-space: nowrap;
+}
+.channel-picuture-container:hover .tooltip {
+    opacity: 1;
+}
+.tooltip-profile-picture{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.tooltip-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.tooltip-text .author {
+    font-weight: bold;
+}
+
+.tooltip-text .stat {
+    font-size: 10px;
+    color: #ccc;
+}
+
+/* Channel picture container */
+.channel-picture-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip styling */
+.channel-picture-container .tooltip {
+    position: absolute;
+    bottom: -70px; /* Adjust to position the tooltip below the channel picture */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: none; /* Hide the tooltip by default */
+    align-items: center;
+    gap: 10px; /* Space between the profile picture and text */
+    z-index: 10;
+    white-space: nowrap;
+}
+
+/* Show tooltip on hover */
+.channel-picture-container:hover .tooltip {
+    display: flex; /* Show the tooltip on hover */
+}
+
+/* Tooltip content */
+.tooltip-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tooltip profile picture */
+.tooltip-profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Tooltip text */
+.tooltip-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.tooltip-text .author {
+    font-weight: bold;
+}
+
+.tooltip-text .stat {
+    font-size: 10px;
+    color: #ccc;
+}

@@ -1,0 +1,63 @@
+.h1 {
+    font-family: Arial
+}
+p {
+    font-family: Arial, Helvetica, sans-serif
+}
+.video-Title{
+font-size: 30px;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
+.writeup{
+font-weight: bold;
+width: 400;
+font-size: 20px;
+margin-bottom: 18px;
+}
+.views{
+font-size: 14px;
+color: rgb(96, 96, 96);
+font-weight: bold;
+margin-top: 0px;
+
+}
+
+.Author{
+font-size: 20px;
+ sans-serif;
+ font-weight: bold;
+
+
+}
+
+.Shop-here{
+background-color: red;
+color: white;
+text-align: center;
+padding-top: 17px;
+padding-bottom: 17px;
+font-size: 15px;
+
+
+
+}
+
+
+
+
+.copy-link {
+cursor: pointer;
+
+}
+.copy-link:hover{
+text-decoration: underline;
+color: aqua;
+}
+.copy-link{
+font-weight: bold;
+}
+.copy-link:active{
+color: blue;
+}
